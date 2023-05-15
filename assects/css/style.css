@@ -17,6 +17,7 @@
 ========================*/
 .fieldfile>.photo {
 	width: 250px;
+	height: 250px;
 }
 .fieldfile>.photo img {
 	width: 100%;
