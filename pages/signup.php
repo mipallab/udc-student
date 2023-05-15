@@ -1,4 +1,7 @@
 <?php
+//include autoload
+include_once('../autoload.php');
+
 
 	if(isset($_POST['submit'])) {
 
@@ -10,8 +13,7 @@
 		    $dob 					= $_POST['date_of_birth'] ;
 		    $old 					= $_POST['old'] ;
 		    $occopation 			= $_POST['occopation'] ;
-		    $phone 					= $_POST['phone'] ;
-		   
+		    $phone 					= $_POST['phone'] ;		   
 		    $gender					= $_POST['gender'] ;
 		    $email 					= $_POST['email'] ;
 		    $username 				= $_POST['username'] ;
@@ -32,7 +34,9 @@
 
 	   	$interested_sub = substr($chk,0,-2);
 
-		echo "<br>". $interested_sub; 
+		//send query
+			$sql = "INSERT INTO students(full_name, father_name, mother_name, present_address, date_of_birth, age, occupation, phone, interested_subject, gender, email, username, password) VALUES ('$fullName', '$fatherName', '$motherName', '$address', '$dob', '$old', '$occopation', '$phone', '$interested_sub', '$gender', '$email', '$username', '$new_password')";
+			mysqli_query($connect, $sql) or die('query not send');
 	}
 
 ?>
@@ -46,17 +50,17 @@
 	
 	
 	<!-- bootstrap 5 -->
-	<link href="./assects/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assects/css/cropper.min.css">
-	<link rel="stylesheet" href="assects/css/style.css">
+	<link href="../assects/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assects/css/cropper.min.css">
+	<link rel="stylesheet" href="../assects/css/style.css">
 	<!-- Responsive css -->
-	<link rel="stylesheet" href="./assects/css/responsive.css">
+	<link rel="stylesheet" href="../assects/css/responsive.css">
 
 </head>
 <body>
 	<div class="container">
 		<div class="header text-center my-5">
-			<img class="" width="100px" height="100px" src="./assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
+			<img class="" width="100px" height="100px" src="../assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
 			<h1 class="text-danger">Bangladesh Udichi Shilpigosthi</h1>
 		</div>
 	</div>
@@ -207,7 +211,7 @@
 							  	</div>
 							</div>
 							<div class="photo border m-3 p-3">
-								<img class="livephoto  border" src="./assects/media/img/dammy.png" alt="Dammy Pic" >
+								<img class="livephoto  border" src="../assects/media/img/dammy.png" alt="Dammy Pic" >
 							</div>
 						</div>
 						<input class="mt-3 btn btn-primary" type="submit" value="Sign up" name="submit">
@@ -216,7 +220,7 @@
 
 				</div>
 				<div class="card-footer">
-					<a href="./index.html">I've already account. Let me log.</a>
+					<a href="../index.php">I've already account. Let me log.</a>
 				</div>
 				</div>
 			</div>
@@ -224,10 +228,10 @@
 	</div>
 
 	<!-- bootstrap 5 -->
-	<script src="./assects/js/jquery-3.6.3.min.js"></script>
-	<script src="./assects/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script src="./assects/js/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="./assects/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="../assects/js/jquery-3.6.3.min.js"></script>
+	<script src="../assects/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="../assects/js/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="../assects/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 	
 	<!-- main script -->
 	<script type="text/javascript">

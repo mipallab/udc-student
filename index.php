@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Log in</title>
-	<link rel="stylesheet" href="./assects/css/style.css">
+	
 	
 	<!-- bootstrap 5 -->
 	<link href="./assects/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- main css -->
+	<link rel="stylesheet" href="./assects/css/style.css">
 
 	<!-- responsive -->
 	<link rel="stylesheet" href="./assects/css/responsive.css">
@@ -37,7 +40,7 @@
 					
 				</div>
 				<div class="card-footer">
-					<a href="./signup.html">Create a new account.</a>
+					<a href="./pages/signup.php">Create a new account.</a>
 				</div>
 			</div>
 		</div>
