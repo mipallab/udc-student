@@ -37,32 +37,34 @@ include_once('../autoload.php');
 
 		//image setup
 		   	$photo_name = $_FILES['up_photo']['name'];
-		   	$photo_type = $_FILES['up_photo']['type'];
 		   	$photo_size = $_FILES['up_photo']['size'];
 		   	$photo_tmp = $_FILES['up_photo']['tmp_name'];
-		   	$photo_error = $_FILES['up_photo']['error'];
 
+
+		   	$check = getimagesize($photo_tmp);
+		   	$target_dir = "../assects/media/img/users/";
+		   	$target_file = $target_dir.basename($photo_name);
+		   	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
+			if($check = false) {
+		   		$error['photo'] = 'This is not an image file';
+		   	
+		   	}else if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+		   		$error['photo'] = 'Sorry, only JPG, JPEG, PNG & GIF files are allowed.';
+		   	
+		   	}else if($photo_size > 5242880) {
+		   		$error['photo'] = 'Your file size too long';
+		   	
+		   	}else if(file_exists($target_file)){
+		   		$error['photo'] = 'Sorry, File already exists, try another image';
+		   	}
 		   	
 
-
-		   	if($photo_size > 5242880) {
-		   		$error['large_photo'] = 'Your file size too long';
-		   	}
-
-
-		     echo "<pre>";
-		     print_r($_POST);
-		     echo "</pre> <br> <br> <br> <br> ";
-
-		     echo "<pre>";
-		     print_r($_FILES);
-		     echo "</pre>";
-
-
+		   	
 		if(count($error) === 0) {
 
 			//send data
-				move_uploaded_file($photo_tmp, "../assects/media/img/users/".$photo_name);
+				move_uploaded_file($photo_tmp, $target_dir.$photo_name);
 
 			//send query
 				$sql = "INSERT INTO students(full_name, father_name, mother_name, present_address, date_of_birth, age, occupation, phone, interested_subject, gender, email, username, password, photo) VALUES ('$fullName', '$fatherName', '$motherName', '$address', '$dob', '$old', '$occopation', '$phone', '$interested_sub', '$gender', '$email', '$username', '$new_password', '$photo_name')";
@@ -162,7 +164,7 @@ include_once('../autoload.php');
 							<fieldset class="border p-2">
 								<legend class="w-auto float-none p-2 fs-6">The interested subject</legend>
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="checkbox" id="song" value="song" name="interested_sub[]">
+									<input class="form-check-input"  type="checkbox" id="song" value="song" name="interested_sub[]" required>
 									<label class="form-check-label pe-auto" for="song">song</label>
 							  	</div>
 							  	<div class="form-check form-check-inline">
@@ -194,11 +196,11 @@ include_once('../autoload.php');
 							<fieldset class="border p-2">
 								<legend  class="float-none w-auto p-2 fs-6">Gender</legend>
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="gender" id="male" value="male" alue="<?php echo (isset($gender)) ? ($phone) : ("");?>">
+									<input class="form-check-input"  type="radio" name="gender" id="male" value="male" alue="<?php echo (isset($gender)) ? ($phone) : ("");?>" required>
 									<label class="form-check-label" for="male">Male</label>
 								</div>
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="gender" id="female" value="female" alue="<?php echo (isset($gender)) ? ($phone) : ("");?>">
+									<input class="form-check-input"  type="radio" name="gender" id="female" value="female" alue="<?php echo (isset($gender)) ? ($phone) : ("");?>">
 									<label class="form-check-label" for="female">Female</label>
 								</div>
 							 </fieldset>
@@ -249,16 +251,16 @@ include_once('../autoload.php');
 							      image < 5MB
 							    	</span>
 							  	</div>
+							  	<div class="my-4 text-danger">
+									<?php
+										if(isset($error['photo'])) {
+											echo $error['photo'];
+										}
+									?>
+								</div>
 							</div>
 							<div class="photo border m-3 p-3">
-								<img class="livephoto  border" src="../assects/media/img/dammy.png" alt="Dammy Pic" >
-								<div class="form-text text-danger">
-								<?php
-									if(isset($error['large_photo'])) {
-										echo $error['large_photo'];
-									}
-								?>
-							</div>
+								<img class="livephoto  border" src="../assects/media/img/dammy.png" alt="Dammy Pic" >								
 							</div>
 						</div>
 						<input class="mt-3 btn btn-primary" type="submit" value="Sign up" name="submit">
