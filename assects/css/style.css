@@ -111,3 +111,10 @@
 	background-color: red;
 	color:#fff;
 }
+
+.interested-nameField fieldset input,
+.interested-nameField fieldset label,
+.gendreField fieldset label,
+.gendreField fieldset input {
+	cursor: pointer;
+}

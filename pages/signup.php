@@ -90,12 +90,7 @@ include_once('../autoload.php');
 	<link rel="stylesheet" href="../assects/css/responsive.css">
 
 </head>
-<style>
-	body {
-		background-color:url('../assects/media/img/signup-bg/1.svg');
-	}
-	
-</style>
+
 <body>
 	<div class="container">
 		<div class="header text-center my-5">
@@ -163,32 +158,32 @@ include_once('../autoload.php');
 						</div>
 
 						<!-- interested subject -->
-						<div class="nameField mb-3">			
+						<div class="interested-nameField mb-3">			
 							<fieldset class="border p-2">
-								<legend class="w-auto float-none fs-6">The interested subject</legend>
+								<legend class="w-auto float-none p-2 fs-6">The interested subject</legend>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="song" value="song" name="interested_sub[]">
-									<label class="form-check-label" for="song">song</label>
+									<label class="form-check-label pe-auto" for="song">song</label>
 							  	</div>
 							  	<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="dance" value="dance" name="interested_sub[]">
-									<label class="form-check-label" for="dance">dance</label>
+									<label class="form-check-label pe-auto" for="dance">dance</label>
 							  	</div>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="recitation" value="recitation" name="interested_sub[]">
-									<label class="form-check-label" for="recitation">Recitation(আবৃত্তি)</label>
+									<label class="form-check-label pe-auto" for="recitation">Recitation(আবৃত্তি)</label>
 							  	</div>
 							  	<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="acting" value="acting" name="interested_sub[]">
-									<label class="form-check-label" for="acting">acting</label>
+									<label class="form-check-label pe-auto" for="acting">acting</label>
 							  	</div>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="tobol" value="tobol" name="interested_sub[]">
-									<label class="form-check-label" for="tobol">tobol</label>
+									<label class="form-check-label pe-auto" for="tobol">tobol</label>
 							  	</div>
 							  	<div class="form-check form-check-inline">
 									<input class="form-check-input" type="checkbox" id="ganeral-member" value="ganeral-member" name="interested_sub[]">
-									<label class="form-check-label" for="ganeral-member"> ganeral member (সাধারণ সদস্য)</label>
+									<label class="form-check-label pe-auto" for="ganeral-member"> ganeral member (সাধারণ সদস্য)</label>
 							  	</div>
 							</fieldset>
 							<hr>
