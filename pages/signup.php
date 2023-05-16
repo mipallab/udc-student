@@ -90,6 +90,12 @@ include_once('../autoload.php');
 	<link rel="stylesheet" href="../assects/css/responsive.css">
 
 </head>
+<style>
+	body {
+		background-color:url('../assects/media/img/signup-bg/1.svg');
+	}
+	
+</style>
 <body>
 	<div class="container">
 		<div class="header text-center my-5">
