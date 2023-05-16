@@ -94,12 +94,15 @@ include_once('../autoload.php');
 </head>
 
 <body>
-	<div class="container">
-		<div class="header text-center my-5">
-			<img class="" width="100px" height="100px" src="../assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
-			<h1 class="text-danger">Bangladesh Udichi Shilpigosthi</h1>
+	<header>
+		<div class="container">
+			<div class="header text-center my-5">
+				<img class="" width="100px" height="100px" src="../assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
+				<h1 class="text-danger display-2"><strong>Bangladesh Udichi Shilpigosthi</strong></h1>
+				<h4 class="text-boler my-3"><strong>Monohardi Shakha, Norshingdi</strong></h4>
+			</div>
 		</div>
-	</div>
+	</header>
 	
 	<div class="container">
 		<div class="reg-table ">
@@ -276,6 +279,15 @@ include_once('../autoload.php');
 		</div>
 	</div>
 
+	<footer>
+	
+	  <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+	    <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="red" />
+	    <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#E6E7E9" />
+	  </svg>
+
+	</footer>
+
 	<!-- bootstrap 5 -->
 	<script src="../assects/js/jquery-3.6.3.min.js"></script>
 	<script src="../assects/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -283,46 +295,7 @@ include_once('../autoload.php');
 	<script src="../assects/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 	
 	<!-- main script -->
-	<script type="text/javascript">
-
-
-		//photo upload
-			jQuery('.fileimg').change(function(e){
-				let url = URL.createObjectURL(e.target.files[0]);
-				jQuery(".livephoto").attr('src',url);
-			});
-
-		//age cal
-			function ageCalculator() {  
-			    let userinput = document.getElementById("dofdate").value;  			// get user date of birth
-			    let dob = new Date(userinput);  									// convet a date
-			    let currentDate = new Date().getFullYear();							// 
-			    let userinputyear = dob.getFullYear();
-			    if(currentDate < userinputyear) {  
-			         document.getElementById("old").value = -1;   
-			      return false;   
-			    } else {  
-			      
-			    //calculate month difference from current date in time  
-			    let month_diff = Date.now() - dob.getTime();  
-			      
-			    //convert the calculated difference in date format  
-			    let age_dt = new Date(month_diff);   
-			      
-			    //extract year from date      
-			    let year = age_dt.getUTCFullYear();  
-			      
-			    //now calculate the age of the user  
-			    let age = Math.abs(year - 1970);  
-			      
-			    //display the calculated age  
-			    return document.getElementById("old").value = age;   
-			       
-			    }  
-			}  
-	
-
-	</script>
+	<script src="../assects/js/main.js"></script>
 
 </body>
 </html>

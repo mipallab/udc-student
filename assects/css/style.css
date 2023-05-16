@@ -112,9 +112,34 @@
 	color:#fff;
 }
 
+/*-----------------------------------
+	singup form cursor pointer 
+------------------------------------*/
+
+
 .interested-nameField fieldset input,
 .interested-nameField fieldset label,
 .gendreField fieldset label,
 .gendreField fieldset input {
 	cursor: pointer;
+}
+
+
+.header {
+	background: #E6E7E9;
+	padding: 28px;
+	box-shadow: 1px 11px 46px red;
+	border-radius: 15px;
+	border: 1px solid red;
+}
+
+
+
+/*------------------------------------
+		Footer 
+--------------------------------------*/
+
+
+footer p {
+	text-align:center;
 }
