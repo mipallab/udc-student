@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Profile</title>
 	<!-- bootstrap 5 -->
-	<link href="./assects/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assects/css/style.css">
-	<link rel="stylesheet" href="./assects/css/responsive.css">
+	<link href="../assects/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assects/css/style.css">
+	<link rel="stylesheet" href="../assects/css/responsive.css">
 </head>
 <body>
 	
 	<div class="container">
 		<div class="header text-center my-5">
-			<img class="" width="100px" height="100px" src="./assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
+			<img class="" width="100px" height="100px" src="../assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
 			<h1 class="text-danger">Bangladesh Udichi Shilpigosthi</h1>
 			<h4 class="text-boler my-3"><strong>Monohardi Shakha, Norshingdi</strong></h4>
 		</div>
@@ -24,10 +24,10 @@
 				<h1>My Profile</h1>
 			</div>
 			<div class="card-body">
-				<div class="profile-head bg-light border" style='background-image: url("./assects/media/img/users/userBG.jpg")'>
+				<div class="profile-head bg-light border" style='background-image: url("../assects/media/img/users/userBG.jpg")'>
 					<div class="user-pic">
 						<div class="pic">
-							<img width="250px" height="250px" class="profile-pic shadow border border-light border-5 rounded-circle" src="./assects/media/img/dammy.png" alt="Dammy">
+							<img width="250px" height="250px" class="profile-pic shadow border border-light border-5 rounded-circle" src="../assects/media/img/dammy.png" alt="Dammy">
 							<h2 class="text-center my-2">Majadul Islam Pallab</h2>
 						</div>
 					</div>
@@ -67,7 +67,7 @@
 						<tr>
 							<th scope="row">Phone Number</th>
 							<td>+880 1713 564842</td>
-						</tr
+						</tr>
 						<tr>
 							<th scope="row">Interested Subject</th>
 							<td>song, dance, recitation, acting, tobla, ganeral member</td>
@@ -108,9 +108,9 @@
 
 
 	<!-- bootstrap 5 -->
-	<script src="./assects/js/jquery-3.6.3.min.js"></script>
-	<script src="./assects/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<script src="./assects/js/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="./assects/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<script src="../assects/js/jquery-3.6.3.min.js"></script>
+	<script src="../assects/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="../assects/js/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="../assects/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
