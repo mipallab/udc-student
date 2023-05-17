@@ -3,6 +3,50 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+::-moz-selection { 
+  color: white;
+  background: red;
+}
+
+::selection {
+  color: white;
+  background: red;
+}
+/*===========================
+		input filed
+=============================*/
+
+
+
+/*bootstrap value change start*/
+.form-control:focus {
+  border-color: #ff0000 !important;
+  box-shadow: 0 0 5px rgba(232, 67, 67, 1) !important;
+}
+.form-check-input:checked {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(232, 67, 67, 0.2)!important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(232, 67, 67, 0.2);
+    border-radius: .25rem;
+}
+/*bootstrap value change end */
+
+
+
+
 
 
 /*======================
@@ -126,11 +170,11 @@
 
 
 .header {
-	background: #E6E7E9;
-	padding: 28px;
-	box-shadow: 1px 11px 46px red;
-	border-radius: 15px;
-	border: 1px solid red;
+    background: #fff;
+    padding: 28px;
+    box-shadow: 1px 2px 27px rgba(232, 67, 67, 0.4);
+    border-radius: 15px;
+    border: 1px solid rgba(232, 67, 67, 0.4);
 }
 
 

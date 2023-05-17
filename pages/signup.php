@@ -98,7 +98,7 @@ include_once('../autoload.php');
 		<div class="container">
 			<div class="header text-center my-5">
 				<img class="" width="100px" height="100px" src="../assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
-				<h1 class="text-danger display-2"><strong>Bangladesh Udichi Shilpigosthi</strong></h1>
+				<h1 class="text-danger"><strong>Bangladesh Udichi Shilpigosthi</strong></h1>
 				<h4 class="text-boler my-3"><strong>Monohardi Shakha, Norshingdi</strong></h4>
 			</div>
 		</div>

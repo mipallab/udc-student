@@ -16,12 +16,20 @@
 	<link rel="stylesheet" href="./assects/css/responsive.css">
 </head>
 <body>
-	
+	<header>
+		<div class="container">
+			<div class="header text-center my-5">
+				<img class="" width="100px" height="100px" src="./assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
+				<h1 class="text-danger"><strong>Bangladesh Udichi Shilpigosthi</strong></h1>
+				<h4 class="text-boler my-3"><strong>Monohardi Shakha, Norshingdi</strong></h4>
+			</div>
+		</div>
+	</header>
 	
 
 	<div class="container">
 		<div class="fromtable mx-auto">
-			<div class="card mt-5 shadow">
+			<div class="card my-5 shadow">
 				<div class="card-header">
 					<h2>Log In</h2>
 				</div>
@@ -55,7 +63,14 @@
 
 
 
+<footer>
+	
+  <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+    <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="red" />
+    <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#E6E7E9" />
+  </svg>
 
+</footer>
 
 
 
