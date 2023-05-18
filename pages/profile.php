@@ -11,13 +11,43 @@
 </head>
 <body>
 	
-	<div class="container">
+	<!-- <div class="container">
 		<div class="header text-center my-5">
 			<img class="" width="100px" height="100px" src="../assects/media/img/udichilogo.jpg" alt="Udhichi Logo">
 			<h1 class="text-danger">Bangladesh Udichi Shilpigosthi</h1>
 			<h4 class="text-boler my-3"><strong>Monohardi Shakha, Norshingdi</strong></h4>
 		</div>
-	</div>
+	</div> -->
+
+
+	
+<nav class="navbar navbar-expand-lg navbar-light shadow py-4" style="background-color: #fff;" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="../assects/media/img/udichilogo.jpg" alt="" width="47" height="47" class="d-inline-block align-text-top"><strong>Bangladesh Udichi Shilpigosthi</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="./signup.php">Signup Student</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active" href="./table.php">All Students List</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="./edit.php">Edit Student Profile</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="./profile.php">View Student Profile</a>
+        </li>
+      </ul>
+	    <div class="d-flex">
+	        <img class="rounded-circle" src="../assects/media/img/dammy.jpg" width="30" height="30" alt="">
+	    </div>
+    </div>
+  </div>
+</nav>
 	<div class="container">
 		<div class="card my-5 shadow">
 			<div class="card-header">
